@@ -1,14 +1,15 @@
 export class Age{
-  constructor(age){
+  constructor(age, year, hour, minute, second){
     this.age = age;
-    this.year = 365;
-    this.hour = 24;
-    this.minute = 60;
-    this.second = 60;
-
+    this.year = year;
+    this.hour = hour;
+    this.minute = minute;
+    this.second = second;
+    this.mercury = mercury;
+    this.venus = venus;
+    this.mars = mars;
+    this.jupitor = jupitor;
   }
-  checkAge(age){
-
 
   }
 }
