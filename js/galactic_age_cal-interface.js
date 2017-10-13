@@ -1,4 +1,4 @@
-import {AgeSec} from './../js/galactic_age_cal.js';
+import {Age} from './../js/galactic_age_cal.js';
 
 $(document).ready(function() {
 

@@ -1,9 +1,12 @@
-export class AgeSec{
-  constructor(age, year, hour, minute, second){
+export class Age{
+  constructor(age){
     this.age = age;
-    this.year = year;
-    this.hour = hour;
-    this.minute = minute;
-    this.second = second;
+
+  }
+
+  lifeOnEarth(age){
+    let person
+
+
   }
 }
