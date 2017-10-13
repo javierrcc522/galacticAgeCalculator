@@ -7,7 +7,6 @@ export class Age{
     this.second = 60;
 
   }
-
   checkAge(age){
 
 
