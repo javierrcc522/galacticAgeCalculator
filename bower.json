@@ -1,0 +1,21 @@
+{
+  "name": "galactic_age_cal",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Javier-J"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/javierrcc522/galacticAgeCalculator",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "v4.0.0-beta"
+  }
+}
