@@ -1,12 +1,32 @@
-import {AgeSec} from './../js/galactic_age_cal.js';
+import {Age} from './../js/galactic_age_cal.js';
 
-describe('AgeSec', () =>{
-  it('should test for age turn into seconds', () =>{
-    let person_age = new Age(21,365,24,60,60)
-    expect(person_age.age).toEqual(21)
-    expect(person_age.year).toEqual(365)
-    expect(person_age.hour).toEqual(24)
-    expect(person_age.minute).toEqual(60)
-    expect(person_age.second).toEqual(60)
+describe('Age', () => {
+  let userTest;
+
+  beforeEach(function(){
+    userTest = new Age(22);
   });
+
+  // it('should test for age turn into seconds', () =>{
+  //   expect(userTest.ageToSec).toEqual(22);
+  // });
+
+  it('should test for age in Mercury age', () =>{
+    expect(userTest.earthToMercury()).toEqual(92);
+  });
+
+  it('should test for age in Venus age', () =>{
+    expect(userTest.earthToVenus()).toEqual(35);
+  });
+
+  it('should test for age in Mars age', () =>{
+    expect(userTest.earthToMars()).toEqual(12);
+  });
+
+  it('should test for age in Mars age', () =>{
+    expect(userTest.earthToJupitor()).toEqual(2);
+  });
+
+
+
 });
