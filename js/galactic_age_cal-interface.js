@@ -13,8 +13,8 @@ $(document).ready(function() {
   // compare two dates
     let inputDate1 = $('#date1').val();
     let inputDate2 = $('#date2').val();
-    console.log(typeof inputDate1);
-    console.log(typeof inputDate2);
+    // console.log(typeof inputDate1);
+    // console.log(typeof inputDate2);
 
   // the object
     let user = new Age(inputAge, inputName, inputGender);
@@ -55,9 +55,13 @@ $(document).ready(function() {
 
     $('#jupiterExpectancy').text(`${user.name} your life expectancy in jupiter is ${user.expectancyJupiter()}`);
 
+    $('#dieMercury').text(`${user.name} you got ${user.yerDieMercury()}`);
+
 
     $('#seconds').text(`${user.difference(inputDate1, inputDate2)}`);
-    console.log(typeof user.difference(inputDate1, inputDate2));
+
+
+    // console.log(typeof user.difference(inputDate1, inputDate2));
 
 
   });

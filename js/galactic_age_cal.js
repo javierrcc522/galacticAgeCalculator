@@ -83,4 +83,14 @@ export class Age {
     return baseJupiter;
   }
 
+
+
+  yerDieMercury(){
+    let baseAge = this.earthToMercury();
+    let baseExp = this.expectancyMercury();
+    let lastAge = baseAge - baseExp;
+    return lastAge;
+  }
+  
+
 }
