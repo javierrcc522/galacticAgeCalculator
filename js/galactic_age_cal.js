@@ -11,7 +11,7 @@ export class Age {
     this.ageToMars = 0;
     this.ageToJupitor = 0;
 
-    this.ageExpectancy = 80;
+    this.ageExpectancy = 60;
 
 
   }

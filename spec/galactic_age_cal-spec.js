@@ -33,8 +33,24 @@ describe('Age', () => {
     expect(userTest.earthToJupitor()).toEqual(2);
   });
 
-  it('should check age expectancy', () =>{
-    expect(userTest.expectancy()).toEqual(73);
+  it('should check earth expectancy', () =>{
+    expect(userTest.expectancy()).toEqual(53);
+  });
+
+  it('should check mercury expectancy', () =>{
+    expect(userTest.expectancyMercury("male")).toEqual(221);
+  });
+
+  it('should check venus expectancy', () =>{
+    expect(userTest.expectancyVenus("male")).toEqual(85);
+  });
+
+  it('should check mars expectancy', () =>{
+    expect(userTest.expectancyMars("male")).toEqual(28);
+  });
+
+  it('should check jupiter expectancy', () =>{
+    expect(userTest.expectancyJupiter("male")).toEqual(4);
   });
 
 

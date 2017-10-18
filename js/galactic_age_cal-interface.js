@@ -5,24 +5,32 @@ $(document).ready(function() {
   $('#age-form').submit(function(event){
 
     event.preventDefault();
+    //taking this values for the new object
     const inputAge = $('#age').val();
     const inputName = $('#name').val();
     const inputGender = $('#gender').val();
+
+  // compare two dates
     let inputDate1 = $('#date1').val();
     let inputDate2 = $('#date2').val();
-    let user = new Age(inputAge, inputName, inputGender);
     console.log(typeof inputDate1);
     console.log(typeof inputDate2);
 
+  // the object
+    let user = new Age(inputAge, inputName, inputGender);
+
+
+
+// original is in zero and changing it to the new input
     user.ageToSec();
     user.earthToMercury();
-    user.earthToVenus(); // original in is zero and chanign it to the new input
+    user.earthToVenus();
     user.earthToMars();
     user.earthToJupitor();
     user.expectancy();
-    // user.mercuryExpectancy();
-    // user.difference(inputDate1, inputDate2);
 
+
+/// age  in the planets
     $('#earthAge').text(`${user.name} your age on Earth is ${user.age}`);
 
     $('#mercAge').text(`${user.name} your age on Mercury is ${user.ageToMerc}`);
@@ -35,7 +43,7 @@ $(document).ready(function() {
 
 
 
-
+    ///life expectancy
 
     $('#earthExpectancy').text(`${user.name} your life expectancy in earth is ${user.ageExpectancy}`);
 
@@ -49,8 +57,6 @@ $(document).ready(function() {
 
 
     $('#seconds').text(`${user.difference(inputDate1, inputDate2)}`);
-
-
     console.log(typeof user.difference(inputDate1, inputDate2));
 
 
