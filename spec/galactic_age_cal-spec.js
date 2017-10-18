@@ -4,7 +4,7 @@ describe('Age', () => {
   let userTest;
 
   beforeEach(function(){
-    userTest = new Age(22, 10, "Javi", "Male");
+    userTest = new Age(22, "Javi", "Male");
   });
 
   it('should test for age turn into seconds', () =>{
@@ -34,7 +34,7 @@ describe('Age', () => {
   });
 
   it('should check age expectancy', () =>{
-    expect(userTest.genderExpectancy()).toEqual(63);
+    expect(userTest.expectancy()).toEqual(73);
   });
 
 

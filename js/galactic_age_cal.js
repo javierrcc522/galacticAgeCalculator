@@ -1,16 +1,18 @@
 export class Age {
 
   // Tools/information you already have
-  constructor(age, birthday, name, gender){
+  constructor(age, name, gender){
     this.age = age;
-    this.birthday = birthday;
     this.name = name;
     this.gender = gender;
-    this.ageExpectancy = 70;
+
     this.ageToMerc = 0;
     this.ageToVenus = 0;
     this.ageToMars = 0;
     this.ageToJupitor = 0;
+
+    this.ageExpectancy = 80;
+
 
   }
   // A function needs tools/information to complete its job. The parameters are those tools.
@@ -47,7 +49,7 @@ export class Age {
     return this.ageToJupitor;
   }
 
-  genderExpectancy(){
+  expectancy(){
     if (this.gender === "Male"){
       this.ageExpectancy = this.ageExpectancy - 7;
     }
@@ -57,5 +59,28 @@ export class Age {
     return this.ageExpectancy;
   }
 
+  expectancyMercury(){
+    let baseExp = this.expectancy();
+    let baseMerc = Math.round(baseExp / 0.24);
+    return baseMerc;
+  }
+
+  expectancyVenus(){
+    let baseExp = this.expectancy();
+    let baseVenus = Math.round(baseExp / 0.62);
+    return baseVenus;
+  }
+
+  expectancyMars(){
+    let baseExp = this.expectancy();
+    let baseMars = Math.round(baseExp / 1.88);
+    return baseMars;
+  }
+
+  expectancyJupiter(){
+    let baseExp = this.expectancy();
+    let baseJupiter = Math.round(baseExp / 11.86);
+    return baseJupiter;
+  }
 
 }
